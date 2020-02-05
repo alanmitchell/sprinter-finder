@@ -18,6 +18,7 @@
   <div class="container">
     <h1>Craigslist Results</h1>
     {% for srch, items in results %}
+      <hr>
       <h3>{{ srch }}</h3>
       {% for title, url, local_url in items %}
       <h4><a href="{{ url }}">{{ title }}</a></h4>
